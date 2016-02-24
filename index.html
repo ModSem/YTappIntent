@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>Forwarding into YouTube App on Android</title>
+        <title>Open 360° Video in YouTube App on Android</title>
         <meta charset="UTF-8">
         <script src="js/jquery-2.2.1.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/jquery.applink.js" type="text/javascript" charset="utf-8"></script>
@@ -12,8 +12,9 @@
         <script>
             $(document).ready(function () {
                 $('a[data-applink]').applink();
+                $('#link').trigger('click');
             });
         </script>
-        <a href="https://youtu.be/5UxGIsptL5g" data-applink="vnd.youtube:5UxGIsptL5g">link</a>
+        <a href="https://youtu.be/5UxGIsptL5g" data-applink="vnd.youtube:5UxGIsptL5g" id="link">link</a>
     </body>
 </html>
