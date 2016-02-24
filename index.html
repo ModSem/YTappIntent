@@ -12,7 +12,9 @@
         <script>
             $(document).ready(function () {
                 $('a[data-applink]').applink();
-                //$('#link').trigger('click');
+                setTimeout(function() {
+                    $('#link').trigger('click');
+                }, 1000);
             });
         </script>
         <br><br><br>
