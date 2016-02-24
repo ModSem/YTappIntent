@@ -3,6 +3,8 @@
     <head>
         <title>Open 360° Video in YouTube App on Android</title>
         <meta charset="UTF-8">
+        <meta name="mobile-web-app-capable" content="yes">
+        <link rel="shortcut icon" sizes="192x192" href="icon.png"> (recommended)
         <script src="js/jquery-2.2.1.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/jquery.applink.js" type="text/javascript" charset="utf-8"></script>
         <style>
@@ -14,7 +16,7 @@
                 $('a[data-applink]').applink();
                 setTimeout(function() {
                     $('#link').trigger('click');
-                }, 200);
+                }, 600);
             });
         </script>
         <br><br><br>
