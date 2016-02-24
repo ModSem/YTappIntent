@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Forwarding into YouTube App on Android</title>
+        <meta charset="UTF-8">
+        <script src="js/jquery-2.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/jquery.applink.js" type="text/javascript" charset="utf-8"></script>
+        <style>
+        </style>
+    </head>
+    <body>        
+        <script>
+            $(document).ready(function () {
+                $('a[data-applink]').applink();
+            });
+        </script>
+        <a href="https://youtu.be/5UxGIsptL5g" data-applink="vnd.youtube:5UxGIsptL5g">link</a>
+    </body>
+</html>
